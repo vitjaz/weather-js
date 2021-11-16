@@ -1,0 +1,15 @@
+body {
+  font-family: "Comfortaa", cursive;
+}
+
+p {
+  margin: 0;
+}
+
+#gradient {
+  background: linear-gradient(90deg, #33b7e2, #5e62b0, #dc307c);
+}
+
+#get-weather-btn {
+  color: #fff;
+}

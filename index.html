@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Simple Weather</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Карточка с выбором города -->
+    <h1 class="text-center mt-2">Weather App</h1>
+    <div class="card">
+      <div class="card-header text-center" id="gradient">
+        А какая у вас погода?
+      </div>
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col">
+            <p class="text-center">Выберите город:</p>
+          </div>
+          <div class="col">
+            <select class="form-select" id="select-city">
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Москва">Москва</option>
+              <option value="Великий Новогород">Великий Новогород</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-outline-danger mt-3" id="get-weather-btn">Узнать погоду!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Карточка с погодой -->
+    <div class="card mt-3">
+      <div class="card-header text-center" id="gradient">
+        <p>Погода</p>
+      </div>
+      <div class="card-body">
+        <div class="row align-items-center text-center">
+            <h3 id="city-name">Выбранный город</h3>
+          
+        </div>
+        <div class="row" id="table-container">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer text-center mt-3">Alexeev Vitaly 2021</footer>
+
+  <script src="js/ui.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
